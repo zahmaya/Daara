@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @matiere.nom %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @matiere.note %>
+</p>
+
+<p>
+  <strong>Emailprof:</strong>
+  <%= @matiere.emailprof %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @matiere.user %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @matiere.student %>
+</p>
+
+<p>
+  <strong>Classroom:</strong>
+  <%= @matiere.classroom %>
+</p>
+
+<%= link_to 'Edit', edit_matiere_path(@matiere) %> |
+<%= link_to 'Back', matieres_path %>

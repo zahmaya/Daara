@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  prenom: MyString
+  datenaiss: 2016-07-19
+  classroom_id: 
+  user_id: 
+
+two:
+  nom: MyString
+  prenom: MyString
+  datenaiss: 2016-07-19
+  classroom_id: 
+  user_id: 

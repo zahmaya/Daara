@@ -1,0 +1,2 @@
+module NonInscrisHelper
+end

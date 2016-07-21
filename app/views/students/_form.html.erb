@@ -1,0 +1,23 @@
+<%= simple_form_for(@student) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nom %>
+    <%= f.input :prenom %>
+    <%= f.input :datenaiss %>
+
+
+
+     <% if current_user.role_id == 1 %>
+     <%= f.input :status, collection: ['oui', 'non'] %>
+     <% end %>
+     <%= f.association :classroom, :label_method => :nom, 
+     :value_method => :id, :collection => Classroom.all  %>
+    <%= f.association :user, :label_method => :email, 
+     :value_method => :id, :collection => User.all  %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
